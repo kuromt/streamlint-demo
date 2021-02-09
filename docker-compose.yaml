@@ -1,0 +1,10 @@
+version: "3"
+services:
+  streamlint-demo:
+    build: .
+    image: streamlint-demo
+    command: ["bash"]
+    volumes:
+        - "./data:/root:rw"
+    ports:
+        - "8501:8501"
